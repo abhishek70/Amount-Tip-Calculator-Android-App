@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BillCalc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="amount_textview">Amount</string>
+    <string name="amount_edittext">0.0</string>
+
+    <string name="tip_textview">Tip</string>
+    <string name="tip_edittext">0.15</string>
+
+    <string name="total_amount_textview">Total Amount</string>
+    <string name="total_amount_edittext">0.0</string>
+
+    <string name="reset_textview">Reset</string>
+
+    <string name="reset_fields">ResetFields</string>
+
+</resources>
