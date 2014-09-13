@@ -12,7 +12,7 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
-
+    // Defining the constants
     private static final String AMOUNT_WITHOUT_TIP = "AMOUNT_WITHOUT_TIP";
     private static final String TOTAL_TIP = "TOTAL_TIP";
     private static final String AMOUNT_WITH_TIP = "AMOUNT_WITH_TIP";
@@ -52,6 +52,7 @@ public class MainActivity extends ActionBarActivity {
         tip.addTextChangedListener(tipChangedListener);
     }
 
+    // Setting the text watcher for the fields
     TextWatcher amountChangedListener = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -67,6 +68,7 @@ public class MainActivity extends ActionBarActivity {
                 resAmount=0.0;
             }
 
+            // function for updating the final bill
             updateFinalBill();
         }
 
@@ -95,6 +97,7 @@ public class MainActivity extends ActionBarActivity {
         }
     };
 
+    // updating final bill
     private void updateFinalBill() {
         resTip = Double.parseDouble(tip.getText().toString());
 
@@ -103,6 +106,7 @@ public class MainActivity extends ActionBarActivity {
         total_amount.setText(String.format("%.2f",resTotalAmount));
     }
 
+    // function for storing the form data when the screen rotates
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
